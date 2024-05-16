@@ -26,8 +26,10 @@ Create a HTML file and include the needed Bootstrap components.
 Publish the website in the LocalHost.
 
 ## PROGRAM :
-## web.html:
+
+### web.html
 ```
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +38,24 @@ Publish the website in the LocalHost.
   <title>Home - PharmaCompany</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-image: url('a.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    footer{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #343a40; 
+      color: white;
+      text-align: center;
+      padding: 10px 0; 
+    }
+  </style>
 </head>
 <body>
 
@@ -54,17 +74,81 @@ Publish the website in the LocalHost.
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
-        <li cla
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Welcome to PharmaCompany</h1>
+        <p>Welcome to PharmaCompany, your trusted source for high-quality pharmaceutical products. We are dedicated to improving the health and well-being of our customers by providing safe and effective medications.</p>
+        <p>At PharmaCompany, we offer a wide range of prescription and over-the-counter medications to meet your healthcare needs. Whether you're managing a chronic condition or simply looking for relief from minor ailments, we have the products you need.</p>
+        <p>Thank you for choosing PharmaCompany for your healthcare needs. We look forward to serving you and helping you live a healthier life.</p>
+      </div>
+      <div class="col-md-4">
+       
+      </div>
     </div>
   </div>
-  <body background="ph-4.jpg" style="background-repeat: no-repeat; background-size: cover;">
-  <br>
-  <br>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2024 PharmaCompany. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+```
+### about.html
+```
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About PharmaCompany</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-image: url('a.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    footer{
+    position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #343a40; 
+      color: white;
+      text-align: center;
+      padding: 10px 0; 
+    }
+  </style>
 </head>
 <body>
 
@@ -75,7 +159,27 @@ Publish the website in the LocalHost.
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-colla
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="web.html">Home</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+            <a class="dropdown-item" href="#vision">Vision</a>
+            <a class="dropdown-item" href="#mission">Mission</a>
+            <a class="dropdown-item" href="#values">Values</a>
+            <!-- Add more subheadings as needed -->
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </div>
@@ -88,23 +192,43 @@ Publish the website in the LocalHost.
         <h1>About PharmaCompany</h1>
         <div id="vision">
           <h2>Vision</h2>
-          <p>Our vision is to be a leading pharmaceutical company in India and to become a significant global player by providing high quality, affordable and innovative solutions in medicine and treatment.</p>
+          <p>Our vision is to be a leading provider of innovative healthcare solutions that improve the quality of life for people around the world.</p>
         </div>
         <div id="mission">
           <h2>Mission</h2>
-          <p>Our mission is to We will discover, develop and successfully market pharmaceutical products to prevent, diagnose, alleviate and cure diseases.</p>
+          <p>Our mission is to develop and deliver safe, effective, and affordable medications that address the healthcare needs of our customers.</p>
         </div>
         <div id="values">
           <h2>Values</h2>
           <ul>
+            <li>Quality: We are committed to maintaining the highest standards of quality in everything we do.</li>
+            <li>Integrity: We conduct our business with honesty, transparency, and ethical behavior.</li>
+            <li>Innovation: We strive to continuously innovate and improve our products and services to better serve our customers.</li>
+            <li>Customer Focus: We are dedicated to understanding and meeting the needs of our customers.</li>
+            <li>Teamwork: We work together as a team to achieve our goals and deliver exceptional results.</li>
+          </ul>
+        </div>
+        <!-- Add more subheadings as needed -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2024 PharmaCompany. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 ```
-## product.html
+### product.html
 ```
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,17 +237,46 @@ Publish the website in the LocalHost.
   <title>Products - PharmaCompany</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-image: url('a.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    footer{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #343a40; 
+      color: white;
+      text-align: center;
+      padding: 10px 0; 
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navbar -->enu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Over-the-counter (OTC) Medications</a>
-            <a class="dropdown-item" href="#">Prescription Drugs</a>
-            <a class="dropdown-item" href="#">Vaccines</a>
-            <a class="dropdown-item" href="#">Supplements</a>
-          </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">PharmaCompany</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="web.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item active">
+          <a class="nav-link" href="product.html">Products <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
@@ -132,21 +285,40 @@ Publish the website in the LocalHost.
           <a class="nav-link" href="#">Login</a>
         </li>
         <li class="nav-item">
-          <a class=">Over-the-counter (OTC)</h5>
-              <p class="card-text">These drugs you can buy without a prescription. Some OTC medicines relieve aches, pains, and itches.</p>
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
-          </div>
+          <a class="nav-link" href="#">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Our Products</h1>
+        <div class="card-deck">
           <div class="card">
-            <img src="prescription drug.jpg" class="card-img-top" alt="Product 2" width="200" height="200">
+            <img src="i.jpg" class="card-img-top" alt="Product 1">
             <div class="card-body">
-              <h5 class="card-title"> prescription drug</h5>
-              <p class="card-text">a pharmaceutical drug that is permitted to be dispensed only to those with a medical prescription.</p>
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">Everherb Karela Jamun Juice - Helps Maintains Healthy Sugar Levels -Helps In Weight Management - 1l.</p>
               <a href="#" class="btn btn-primary">Buy Now</a>
             </div>
           </div>
           <div class="card">
-            <img src="injections.jpg"y Now</a>
+            <img src="j.jpeg" class="card-img-top" alt="Product 2">
+            <div class="card-body">
+              <h5 class="card-title">Product 2</h5>
+              <p class="card-text">Calcimax Forte Plus Strip Of 30 Tablets.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="k.jpeg" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Product 3</h5>
+              <p class="card-text">Healthkart Calcium Tablets For Men & Women With Vitamin D3 For Complete Bone Health & Joint (60 No).</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
             </div>
           </div>
         </div>
@@ -156,22 +328,61 @@ Publish the website in the LocalHost.
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-4 mt-5">
-    <p>&copy; 2024 PharmaCompany. All rights reserved. CHARITHA KAMIREDDY</p>
+    <p>&copy; 2024 PharmaCompany. All rights reserved.</p>
   </footer>
-  <body background="ph-7.jpg" style="background-repeat: no-repeat; background-size: cover;">
 
-r.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 ```
-## contact.html
+### contact.html
 ```
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta n
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - PharmaCompany</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-image: url('a.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    footer{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #343a40; 
+      color: white;
+      text-align: center;
+      padding: 10px 0; 
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">PharmaCompany</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="web.html">Home</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
@@ -198,28 +409,33 @@ r.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
           </div>
           <div class="form-group">
             <label for="email">Your Email</label>
-            <inputh2>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <h2>PharmaCompany</h2>
         <address>
           <strong>Address:</strong><br>
-          RAMA THULASAMMA,MADANAPALLE<br>
-          India, 517325<br><br>
+          123 ABC street, Chennai<br>
+          India, 632007<br><br>
           <strong>Email:</strong><br>
-          charitha@pharmacompany.com<br><br>
+          info@pharmacompany.com<br><br>
           <strong>Phone:</strong><br>
-          +91 8125339942
+          +1234567890
         </address>
       </div>
     </div>
   </div>
- 
-  <body background="ph-8.jpg" style="background-repeat: no-repeat; background-size: cover;">
 
-    <br>
-    <br>
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4 mt-2 ">
-    <p>&copy; 2024 PharmaCompany. All rights reserved.BY CHARITHA KAMIREDDY</p>
-
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2024 PharmaCompany. All rights reserved.</p>
   </footer>
 
   <!-- Bootstrap JS -->
@@ -231,11 +447,13 @@ r.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 ```
 
 
+
 ## OUTPUT:
+![img 1](https://github.com/23004205/Pharma/assets/138971114/4771206e-4f61-4174-a2dc-6b38a831ba07)
+![img 2](https://github.com/23004205/Pharma/assets/138971114/31a12f35-928d-4581-9ac1-b60b0c5c7c7a)
+![img 3](https://github.com/23004205/Pharma/assets/138971114/ff081043-dd10-4bf3-a464-d84bae3fc320)
+![img 4](https://github.com/23004205/Pharma/assets/138971114/b38737e6-c198-4235-b62d-595b94540951)
 
-![image](https://github.com/Kamaleshwa/Pharma/assets/144980199/a072ea7f-1754-4359-82e8-9dfcb893d323)
-
-![image](https://github.com/Kamaleshwa/Pharma/assets/144980199/df91e460-6560-4658-9a3a-f020fea65383)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
